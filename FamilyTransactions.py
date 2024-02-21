@@ -4,12 +4,12 @@ import sys
 import cbor2
 
 NAME = 'custom'
-NAMESPACE = hashlib.sha512(NAME.encode('utf-8')).hexdigest()[:6]
+NAMESPACE = hashlib.sha512(NAME.encode('utf-8')).hexdigest()[:6]  # Use the SHA-512 hash hash function to generate a namespace
 VERSION = '1.0'
 
 def generate_address(key):
     return NAMESPACE + hashlib.sha512(str(key).encode('utf-8')).hexdigest()[
-                       -64:]
+                       -64:]  # Pass in the key and concatenate the two hashes to generate the final address
 
 
 class TransactionPayload:
