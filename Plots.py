@@ -10,8 +10,8 @@ plt.rc('ytick', labelsize=15)    # fontsize of the tick labels
 plt.rc('font', size=15)          # controls default text sizes
 
 plt.xlabel("Number of blocks mined")
-plt.ylabel("Total computational time(ms)")
-plt.title("Number of P2P CS nodes: 5, Number of transactions in each block: 60")
+plt.ylabel("Total computational time (in seconds)")
+plt.title("Number of P2P nodes: 5, Number of transactions in each block: 60")
 
 times = [7.478, 14.705, 21.269, 31.472, 42.731]
 blks = [10, 20, 30, 40, 50]
@@ -36,8 +36,8 @@ plt.rc('ytick', labelsize=15)    # fontsize of the tick labels
 plt.rc('font', size=15)          # controls default text sizes
 
 plt.xlabel("Number of transactions per block")
-plt.ylabel("Total computational time(ms)")
-plt.title("Number of P2P CS nodes: 5, Number of blocks mined: 30")
+plt.ylabel("Total computational time (in seconds)")
+plt.title("Number of P2P nodes: 5, Number of blocks mined: 30")
 
 times = [9.608, 13.475, 19.177, 23.634, 28.849]
 txs = [20, 40, 60, 80, 100]
