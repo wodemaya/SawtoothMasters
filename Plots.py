@@ -11,7 +11,7 @@ plt.rc('font', size=15)          # controls default text sizes
 
 plt.xlabel("Number of blocks mined")
 plt.ylabel("Total computational time(ms)")
-plt.title("Number of P2P CS nodes: 5,Number of transactions in each block: 60")
+plt.title("Number of P2P CS nodes: 5, Number of transactions in each block: 60")
 
 times = [7.478, 14.705, 21.269, 31.472, 42.731]
 blks = [10, 20, 30, 40, 50]
